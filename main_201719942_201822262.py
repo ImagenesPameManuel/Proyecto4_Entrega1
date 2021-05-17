@@ -28,7 +28,7 @@ def calculate_descriptors(data, parameters, calculate_dict):
         for i in range(len(dataGris)):
             resp = calculateFilterResponse_201719942_201822262(dataGris[i], filtros)
             calculateTextonDictionary_201719942_201822262()
-    histograms = list(map(parameters['histogram_function'], data, bins))
+    histograms = list(map(parameters['histogram_function'], data, bins)) 
     # TODO Verificar tamaño de descriptor_matrix igual a # imágenes x dimensión del descriptor
     # se realizan ajustes si son necesarios para cada una de las funciones
     if parameters['histogram_function'] == CatColorHistogram:
@@ -259,6 +259,8 @@ test[1:3, :] = miniMatrizParaPamePorqueLeEncanta
 a = np.array([1, 2])
 b = np.array([2,4])
 c = distance.euclidean(a, b)
+
+
 
 
 
